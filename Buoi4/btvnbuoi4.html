@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đơn ứng tuyển Front-End Developer</title>
+
+  <style>
+    body {background-color: #111111;color: #eeeeee;font-family: Arial, sans-serif}
+    .page {max-width: 600px;margin: 30px auto;padding: 24px;background-color: #1b1b1f;border: 1px solid #ff3d8b;border-radius: 12px}
+    .title {font-family: Impact, 'Arial Black', sans-serif;font-size: 36px;color: #ff3d8b;text-align: center;margin-bottom: 6px}
+    .sub-title {text-align: center;color: #999999;margin-bottom: 24px}
+    .group {border: 1px solid #555555;border-radius: 10px;padding: 16px;margin-bottom: 20px}
+    .group-name {color: #ff8fbd;font-weight: bold;font-size: 18px}
+    .star {color: #ff3d8b}
+    .input-box {width: 90%;padding: 10px;margin-bottom: 14px;background-color: #2a2a30;color: #ffffff;border: 1px solid #ff3d8b;border-radius: 6px}
+    .file-box {color: #eeeeee;margin-bottom: 14px}
+    .submit-btn {width: 100%;padding: 14px;font-size: 18px;font-weight: bold;color: #ffffff;background-color: #ff3d8b;border: none;border-radius: 8px}
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <h1 class="title">Ứng tuyển Front-End Developer</h1>
+    <p class="sub-title">Điền thông tin bên dưới để gửi hồ sơ. Mục có dấu <span class="star">*</span> là bắt buộc.</p>
+
+    <form action="" method="post" enctype="multipart/form-data" onsubmit="alert('Đã gửi hồ sơ!'); return false;">
+
+      <fieldset class="group">
+        <legend class="group-name">Thông tin cá nhân</legend>
+
+        <label for="fullname">Họ và tên (Full Name) <span class="star">*</span></label><br>
+        <input class="input-box" type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn A" required><br>
+
+        <label for="email">Địa chỉ Email (Email Address) <span class="star">*</span></label><br>
+        <input class="input-box" type="email" id="email" name="email" placeholder="ban@example.com" required><br>
+
+        <label for="phone">Số điện thoại (Phone)</label><br>
+        <input class="input-box" type="tel" id="phone" name="phone" placeholder="0912 345 678">
+      </fieldset>
+
+      <fieldset class="group">
+        <legend class="group-name">Hồ sơ ứng tuyển</legend>
+
+        <label for="cover">Thư giới thiệu bản thân (Cover Letter)</label><br>
+        <textarea class="input-box" id="cover" name="cover" rows="6" placeholder="Vì sao bạn phù hợp với vị trí này?"></textarea><br>
+
+        <label for="resume">Tải lên CV/Resume (Upload Resume/CV)</label><br>
+        <input class="file-box" type="file" id="resume" name="resume">
+      </fieldset>
+
+      <button class="submit-btn" type="submit">Gửi hồ sơ</button>
+    </form>
+  </div>
+</body>
+</html>
